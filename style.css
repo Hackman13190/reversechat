@@ -174,12 +174,12 @@ input[type="submit"]
     outline: none;
     background: #45f3ff;
     padding: 11px 25px;
-    width: 100px;
+    width: 115px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 30px;
 }
 
@@ -196,4 +196,11 @@ input[type="submit"]:active
 .links a:hover:active
 {
     opacity: 0.8;
+}
+
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
