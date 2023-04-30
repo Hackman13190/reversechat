@@ -206,6 +206,6 @@ input[type="submit"]:active
 
 .remember span
 {
-    color: #8f8f8f;
+    color: red;
     letter-spacing: 0.05em;
 }
