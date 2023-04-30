@@ -204,6 +204,11 @@ input[type="submit"]:active
     text-align: center;
 }
 
+.remember
+{
+    margin-top: 8px;
+}
+
 .remember span
 {
     color: #8f8f8f;
