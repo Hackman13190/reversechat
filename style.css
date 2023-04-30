@@ -90,7 +90,7 @@ body
 {
     position: relative;
     width: 300px;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 
 .inputBox input
@@ -202,4 +202,10 @@ input[type="submit"]:active
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.remember span
+{
+    color: #8f8f8f;
+    letter-spacing: 0.05em;
 }
