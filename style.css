@@ -175,12 +175,11 @@ input[type="submit"]
     background: #45f3ff;
     padding: 11px 25px;
     width: 100px;
-    margin-top: 10px;
     border-radius: 4px;
     font-weight: 600;
     cursor: pointer;
     display: block;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 30px;
 }
 
@@ -190,6 +189,11 @@ input[type="submit"]:active
 }
 
 .links a:nth-child(2):active
+{
+    opacity: 0.8;
+}
+
+.links a:hover:active
 {
     opacity: 0.8;
 }
