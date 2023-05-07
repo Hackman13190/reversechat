@@ -147,6 +147,46 @@ body
     height: 44px;
 }
 
+.inputBox input[type="password"] {
+    padding-right: 50px;
+}
+
+.inputBox input[type="password"]:valid ~ img {
+    display: block;
+}
+
+.inputBox input[type="password"]:focus ~ img {
+    display: block;
+}
+
+.inputBox input[type="password"]:invalid ~ img {
+    display: none;
+}
+
+.inputBox img {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.inputBox input[type="password"]:valid ~ .links {
+    display: flex;
+
+}
+
+.inputBox input[type="password"]:focus ~ .links {
+    display: flex;
+
+}
+
+.inputBox input[type="password"]:invalid ~ .links {
+    display: flex;
+    justify-content: space-between;
+}
+
 .links
 {
     display: flex;
@@ -156,10 +196,10 @@ body
 .links a
 {
     margin: 10px 0;
-    font-size: 0.75em;
+    font-size: 0.8em;
     color: #8f8f8f;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 23px;
 }
 
 .links a:hover,

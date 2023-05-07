@@ -117,14 +117,37 @@ body
     pointer-events: none;
     letter-spacing: 0.05em;
     transition: 0.5s;
+    vertical-align: middle;
 }
 
 .inputBox input:valid ~ span,
-.inputBox input:focus ~ span
-{
-color: #45f3ff;
-transform: translateX(0px) translateY(-34px);
-font-size: 0.75em;
+.inputBox input:focus ~ span {
+    color: #45f3ff;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputBox input[type="password"] {
+    padding-right: 50px;
+}
+
+.inputBox input[type="password"]:valid ~ img {
+    display: block;
+}
+
+.inputBox input[type="password"]:focus ~ img {
+    display: block;
+}
+
+.inputBox input[type="password"]:invalid ~ img {
+    display: none;
+}
+
+.inputBox img {
+    float: right;
+    height: 20px;
+    cursor: pointer;
+    vertical-align: middle;
 }
 
 .inputBox i
@@ -153,19 +176,27 @@ font-size: 0.75em;
     justify-content: space-between;
 }
 
-.links a
+.links .already
 {
-    margin: 10px 0;
-    font-size: 0.75em;
+    font-size: 0.8em;
     color: #8f8f8f;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
-.links a:hover,
-.links a:nth-child(2)
+.links .sign
 {
+    margin: 10px 0;
+    font-size: 0.8em;
     color: #45f3ff;
+    text-decoration: none;
+    margin-top: 13px;
+}
+
+.error
+{
+    color: red;
+    font-size: 12.5px;
 }
 
 .remember
@@ -274,7 +305,4 @@ input[type="submit"]:active
     opacity: 0.8;
 }
 
-.links a:hover:active
-{
-    opacity: 0.8;
-}
+
